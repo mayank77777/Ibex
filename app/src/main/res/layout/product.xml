@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/slider_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/blue_box_product"
+                android:fontFamily="@font/open_sans_bold"
+                android:paddingHorizontal="5dp"
+                android:text="14% off"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/service_image" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/watch"
+                    android:tint="@color/gray"/>
+
+                <TextView
+                    android:fontFamily="@font/open_sans"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:paddingHorizontal="5dp"
+                    android:text="09:00"
+                    android:textColor="@color/gray" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:text="fresh fruits"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textSize="13sp"
+                android:maxLines="1"
+
+                android:text="Rs 100"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/addToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/blue_box_product"
+                android:fontFamily="@font/open_sans_bold"
+                android:paddingHorizontal="5dp"
+                android:text="Add to Cart"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
